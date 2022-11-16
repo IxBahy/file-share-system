@@ -4,10 +4,10 @@ namespace App\Http\Controllers;
 
 use App\Drive;
 use Illuminate\Http\Request;
+use App\Auth;
 
 class DriveController extends Controller
 {
-
 
     public function __construct()
     {
@@ -60,6 +60,7 @@ class DriveController extends Controller
         $newDrive->title = $request->title;
 
         $newDrive->description = $request->description;
+        $newDrive->authorID=  $request->authorID;
 
         $fileData = $request->file('fileInput');
 

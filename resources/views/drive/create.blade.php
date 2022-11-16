@@ -54,6 +54,11 @@
 
                         </div><!-- file -->
 
+                        <div class="form-group " style="visibility: hidden">
+                            <input type="text" name="authorID" class=" form-control"style="visibility: hidden"
+                                value="{{ Auth::user()->id }}">
+                        </div><!-- file -->
+
                         <button type="submit" class="btn btn-primary">Send</button>
 
                     </form>
